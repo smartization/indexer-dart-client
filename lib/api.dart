@@ -1,4 +1,4 @@
-library indexer-api-client.api;
+library indexer_api_client.api;
 
 import 'dart:async';
 import 'dart:convert';

@@ -1,4 +1,4 @@
-name: indexer-api-client
+name: indexer_api_client
 version: 1.0.0
 description: API Client for indexer backend
 dependencies:

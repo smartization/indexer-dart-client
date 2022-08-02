@@ -1,8 +1,8 @@
-# indexer-api-client.api.PlaceControllerApi
+# indexer_api_client.api.PlaceControllerApi
 
 ## Load the API package
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:8080/api*
@@ -23,7 +23,7 @@ Add single item into given place
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 var placeId = 789; // int | Place to which item will be added
@@ -66,7 +66,7 @@ Get one place pointed by id
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 var id = 789; // int | 
@@ -107,7 +107,7 @@ Delete one place pointed by give id
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 var id = 789; // int | 
@@ -147,7 +147,7 @@ Get all available places
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 
@@ -184,7 +184,7 @@ Add one place
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 var body = new PlaceDTO(); // PlaceDTO | 
@@ -225,7 +225,7 @@ Delete single item from given place
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new PlaceControllerApi();
 var placeId = 789; // int | Place from which item will be deleted

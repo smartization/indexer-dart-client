@@ -1,8 +1,8 @@
-# indexer-api-client.api.ItemControllerApi
+# indexer_api_client.api.ItemControllerApi
 
 ## Load the API package
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:8080/api*
@@ -21,7 +21,7 @@ Delete single item pointed by its id
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
 var item id to be deleted = 789; // int | 
@@ -61,7 +61,7 @@ Returns all possible items
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
 
@@ -98,7 +98,7 @@ Returns single entity pointed by it id
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
 var item id to resolve = 789; // int | 
@@ -139,7 +139,7 @@ Post single item into indexer
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
 var body = new ItemDTO(); // ItemDTO | 

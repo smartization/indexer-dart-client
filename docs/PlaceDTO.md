@@ -1,8 +1,8 @@
-# indexer-api-client.model.PlaceDTO
+# indexer_api_client.model.PlaceDTO
 
 ## Load the model package
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 ```
 
 ## Properties

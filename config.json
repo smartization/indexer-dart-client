@@ -1,5 +1,5 @@
 {
-  "pubName": "indexer-api-client",
+  "pubName": "indexer_api_client",
   "pubApiVersion": "1.0.0",
   "pubDescription": "API Client for indexer backend"
 }
