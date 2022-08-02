@@ -1,4 +1,4 @@
-part of indexer-api-client.api;
+part of indexer_api_client.api;
 
 class ApiException implements Exception {
   int code = 0;

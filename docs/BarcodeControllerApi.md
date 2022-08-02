@@ -1,8 +1,8 @@
-# indexer-api-client.api.BarcodeControllerApi
+# indexer_api_client.api.BarcodeControllerApi
 
 ## Load the API package
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 ```
 
 All URIs are relative to *http://localhost:8080/api*
@@ -20,7 +20,7 @@ For single barcode it will try to resolve via google service
 
 ### Example
 ```dart
-import 'package:indexer-api-client/api.dart';
+import 'package:indexer_api_client/api.dart';
 
 var api_instance = new BarcodeControllerApi();
 var barcode = barcode_example; // String | 

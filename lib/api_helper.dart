@@ -1,4 +1,4 @@
-part of indexer-api-client.api;
+part of indexer_api_client.api;
 
 const _delimiters = const {'csv': ',', 'ssv': ' ', 'tsv': '\t', 'pipes': '|'};
 
