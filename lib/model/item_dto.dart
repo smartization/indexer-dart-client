@@ -16,7 +16,7 @@ class ItemDTO {
 
   PlaceDTO storagePlace = null;
 /* Due date of item */
-  DateTime dueDate = null;
+  JsonDateTime dueDate = null;
 
   ItemDTO();
 
@@ -33,7 +33,7 @@ class ItemDTO {
     barcode = json['barcode'];
     barcodeType = json['barcodeType'];
     storagePlace = new PlaceDTO.fromJson(json['storagePlace']);
-    dueDate = new DateTime.fromJson(json['dueDate']);
+    dueDate = new JsonDateTime.fromJson(json['dueDate']);
   }
 
   Map<String, dynamic> toJson() {

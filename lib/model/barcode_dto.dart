@@ -9,7 +9,7 @@ class BarcodeDTO {
 /* Result of searching in external api */
   String searchResult = null;
 /* Time when barcode was resolved */
-  DateTime processingTime = null;
+  JsonDateTime processingTime = null;
 /* Site from which barcode was resolved */
   String link = null;
 
@@ -25,7 +25,7 @@ class BarcodeDTO {
     title = json['title'];
     value = json['value'];
     searchResult = json['searchResult'];
-    processingTime = json['processingTime'] == null ? null : DateTime.parse(json['processingTime']);
+    processingTime = json['processingTime'] == null ? null : JsonDateTime.parse(json['processingTime']);
     link = json['link'];
   }
 
