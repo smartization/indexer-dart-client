@@ -1,3 +1,4 @@
+// @dart=2.9
 part of indexer_api_client.api;
 
 class ApiException implements Exception {
@@ -17,7 +18,9 @@ class ApiException implements Exception {
       return "ApiException $code: $message";
     }
 
-    return "ApiException $code: $message (Inner exception: ${innerException})\n\n" +
+    return "ApiException $code: $message (Inner exception: ${innerException})
+
+" +
         stackTrace.toString();
   }
 }
