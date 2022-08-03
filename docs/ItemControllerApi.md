@@ -15,7 +15,7 @@ Method | HTTP request | Description
 [**post1**](ItemControllerApi.md#post1) | **POST** /items/ | Post single item into indexer
 
 # **delete1**
-> delete1(item id to be deleted)
+> delete1(id)
 
 Delete single item pointed by its id
 
@@ -24,10 +24,10 @@ Delete single item pointed by its id
 import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
-var item id to be deleted = 789; // int | 
+var id = 789; // int | item description
 
 try {
-    api_instance.delete1(item id to be deleted);
+    api_instance.delete1(id);
 } catch (e) {
     print("Exception when calling ItemControllerApi->delete1: $e\n");
 }
@@ -37,7 +37,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **item id to be deleted** | **int**|  | 
+ **id** | **int**| item description | 
 
 ### Return type
 
@@ -92,7 +92,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **getById**
-> ItemDTO getById(item id to resolve)
+> ItemDTO getById(id)
 
 Returns single entity pointed by it id
 
@@ -101,10 +101,10 @@ Returns single entity pointed by it id
 import 'package:indexer_api_client/api.dart';
 
 var api_instance = new ItemControllerApi();
-var item id to resolve = 789; // int | 
+var id = 789; // int | item id to resolve
 
 try {
-    var result = api_instance.getById(item id to resolve);
+    var result = api_instance.getById(id);
     print(result);
 } catch (e) {
     print("Exception when calling ItemControllerApi->getById: $e\n");
@@ -115,7 +115,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **item id to resolve** | **int**|  | 
+ **id** | **int**| item id to resolve | 
 
 ### Return type
 

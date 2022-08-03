@@ -10,16 +10,16 @@ class ItemControllerApi {
   /// Delete single item pointed by its id
   ///
   /// 
-  Future delete1(int item id to be deleted) async {
+  Future delete1(int id) async {
     Object postBody = null;
 
     // verify required params are set
-    if(item id to be deleted == null) {
-     throw new ApiException(400, "Missing required param: item id to be deleted");
+    if(id == null) {
+     throw new ApiException(400, "Missing required param: id");
     }
 
     // create path and map variables
-    String path = "/items/{id}".replaceAll("{format}","json").replaceAll("{" + "item id to be deleted" + "}", item id to be deleted.toString());
+    String path = "/items/{id}".replaceAll("{format}","json").replaceAll("{" + "id" + "}", id.toString());
 
     // query params
     List<QueryParam> queryParams = [];
@@ -109,16 +109,16 @@ class ItemControllerApi {
   /// Returns single entity pointed by it id
   ///
   /// 
-  Future<ItemDTO> getById(int item id to resolve) async {
+  Future<ItemDTO> getById(int id) async {
     Object postBody = null;
 
     // verify required params are set
-    if(item id to resolve == null) {
-     throw new ApiException(400, "Missing required param: item id to resolve");
+    if(id == null) {
+     throw new ApiException(400, "Missing required param: id");
     }
 
     // create path and map variables
-    String path = "/items/{id}".replaceAll("{format}","json").replaceAll("{" + "item id to resolve" + "}", item id to resolve.toString());
+    String path = "/items/{id}".replaceAll("{format}","json").replaceAll("{" + "id" + "}", id.toString());
 
     // query params
     List<QueryParam> queryParams = [];
