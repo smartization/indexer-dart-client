@@ -1,5 +1,6 @@
 // @dart=2.9
 library indexer_api_client.api;
+import 'extensions/json_date_time.dart';
 
 import 'dart:async';
 import 'dart:convert';

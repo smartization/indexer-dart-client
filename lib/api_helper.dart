@@ -37,7 +37,7 @@ Iterable<QueryParam> _convertParametersForCollectionFormat(
 String parameterToString(dynamic value) {
   if (value == null) {
     return '';
-  } else if (value is DateTime) {
+  } else if (value is JsonDateTime) {
     return value.toUtc().toIso8601String();
   } else {
     return value.toString();

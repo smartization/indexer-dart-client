@@ -1,4 +1,5 @@
 // @dart=2.9
+import 'package:indexer_api_client/api.dart';
 import 'package:swagger/api.dart';
 import 'package:test/test.dart';
 
