@@ -13,4 +13,5 @@ docker run \
           -o /local \
           --git-repo-id indexer-dart-client \
           --git-user-id smartization \
-          -c /local/config.json
+          -c /local/config.json \
+          -DbrowserClient=false
