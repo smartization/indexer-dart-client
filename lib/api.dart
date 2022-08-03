@@ -1,3 +1,4 @@
+// @dart=2.9
 library indexer_api_client.api;
 
 import 'dart:async';
