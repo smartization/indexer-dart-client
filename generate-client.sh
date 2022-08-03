@@ -42,7 +42,10 @@ for FILE in $(find . -name '*.dart'); do
   else
     # does not begins
     echo "$FILE does not contains proper dart version annotation, adding it"
-    echo -e "// @dart=2.9\n$(cat $FILE)" > $FILE
+    if [[ $FILE == ./lib/api_exception.dart ]]; then
+      continue
+    fi
+    echo -e "// @dart=2.9\n$(cat "$FILE")" > "$FILE"
   fi
 done
 
