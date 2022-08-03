@@ -36,7 +36,7 @@ echo "Adding language version 2.9 to all files"
 
 for FILE in $(find . -name '*.dart'); do
   # check if file begins with version annotation
-  if [[ $(sed -n '/^\/\/ @dart=2.9/p;q' $FILE) ]]; then
+  if [[ $(sed -n '/^\/\/ @dart=2.9/p;q' $FILE) ]] || [[ $FILE == ./lib/extensions/json_date_time.dart ]]; then
     # begins
     echo "$FILE already contains proper dart version annotation"
   else
@@ -45,6 +45,24 @@ for FILE in $(find . -name '*.dart'); do
     sed -i '1 i\// @dart=2.9' $FILE
   fi
 done
+
+# swap all DateTime to JsonDateTime
+for FILE in $(find . -name '*.dart'); do
+  if [[ $FILE == ./lib/extensions/json_date_time.dart ]]; then
+    continue
+  fi
+  sed -i "s/DateTime/JsonDateTime/g" $FILE
+done
+
+# add import of JsonDateTime
+if [[ $(sed -n "/^import \'extensions\/json\_date\_time\.dart\';/p;q" ./lib/api.dart) ]]; then
+  # contains import
+  echo "./lib/api.dart already contains proper JsonDateTime import"
+else
+  # does not contains
+  echo "./lib/api.dart does not contains proper JsonDateTime import, adding it"
+  sed -i "3 i\import 'extensions/json_date_time.dart';" ./lib/api.dart
+fi
 
 echo "Adding sdk version to pubspec.yaml"
 echo -e "environment:\n  sdk: \">=2.17.5 <3.0.0\"" >> pubspec.yaml
