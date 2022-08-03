@@ -1,7 +1,7 @@
 // @dart=2.9
 part of indexer_api_client.api;
 
-const _delimiters = const {'csv': ',', 'ssv': ' ', 'tsv': '	', 'pipes': '|'};
+const _delimiters = const {'csv': ',', 'ssv': ' ', 'tsv': '\t', 'pipes': '|'};
 
 // port from Java version
 Iterable<QueryParam> _convertParametersForCollectionFormat(
