@@ -47,4 +47,4 @@ for FILE in $(find . -name '*.dart'); do
 done
 
 echo "Adding sdk version to pubspec.yaml"
-echo -e "environment:\n\tsdk: \">=2.17.5 <3.0.0\"" >> pubspec.yaml
+echo -e "environment:\n  sdk: \">=2.17.5 <3.0.0\"" >> pubspec.yaml
