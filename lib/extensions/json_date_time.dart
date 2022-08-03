@@ -11,7 +11,7 @@ class JsonDateTime extends DateTime {
         int super.microsecond = 0]);
   JsonDateTime.fromMicrosecondsSinceEpoch(int microseconds) : super.fromMicrosecondsSinceEpoch(microseconds);
   JsonDateTime.fromMillisecondsSinceEpoch(int milliseconds) : super.fromMillisecondsSinceEpoch(milliseconds);
-  JsonDateTime.fromJson(dynamic json) : super.fromMicrosecondsSinceEpoch(DateTime.parse(json).microsecond);
+  JsonDateTime.fromJson(dynamic json) : super.fromMicrosecondsSinceEpoch(DateTime.parse(json).microsecondsSinceEpoch);
   JsonDateTime.now() : super.now();
   static JsonDateTime parse(dynamic json) {
     return DateTime.parse(json) as JsonDateTime;
