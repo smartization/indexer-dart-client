@@ -18,9 +18,7 @@ class ApiException implements Exception {
       return "ApiException $code: $message";
     }
 
-    return "ApiException $code: $message (Inner exception: ${innerException})
-
-" +
+    return "ApiException $code: $message (Inner exception: ${innerException})\n\n" +
         stackTrace.toString();
   }
 }
